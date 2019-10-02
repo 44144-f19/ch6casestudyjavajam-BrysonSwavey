@@ -1,5 +1,4 @@
-body, header, nav, main, footer {}
-*{box-sizing: border-box:}
+header, nav, main, footer {display: block;}
 body { background-color: #FCEBB6; 
       color: #221811;
       font-family: Verdana, Arial, sans-serif;
@@ -17,7 +16,9 @@ h1 { padding-top: 45px;
 h4 { background-color: #D2B48C;
     font-size: 1.2em;
 	padding-left:   .5em;   
-	padding-bottom: .25em;    
+	padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: solid 3px;
 }
 nav { text-align: center; 
      font-weight: bold; 
@@ -66,19 +67,24 @@ main h2, main h3, main h4, main p, main div, main ul, main dl
         {padding-left: 3em;
         padding-right: 2em;}
     
-
+* {box-sizing: border-box;}
 #heroroad {
-    background: url(heroroad.jpg);
+    background-image: url(heroroad.jpg);
     background-size: 100%;
     height: 250px;
     }
 #heromugs {
-    background: url(heromugs.jpg);
+    background-image: url(heromugs.jpg);
     background-size: 100%;
     height: 250px;
     }
 #heroguitar {
-    background: url(heroguitar.jpg);
+    background-image: url(heroguitar.jpg);
     background-size: 100%;
     height: 250px;
     }
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
