@@ -18,7 +18,8 @@ h4 { background-color: #D2B48C;
 	padding-left:   .5em;   
 	padding-bottom: 0;
     text-transform: uppercase;
-    border-bottom: solid 3px;
+    border-bottom: 1px solid #ffffff;
+    clear: both;
 }
 nav { text-align: center; 
      font-weight: bold; 
@@ -31,8 +32,12 @@ nav { text-align: center;
 nav a:link{color: #FEF6C2;}
 nav a:visited{color: #D2B48C;}
 nav a:hover{color: #CC9933;}
-
 nav a { text-decoration: none; }
+
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
 main { padding-left: 0;
       padding-right: 0;
 	  padding-bottom: 2em;
@@ -51,13 +56,14 @@ footer { background-color: #D2B48C;
 #wrapper { width: 80%;
            margin-right: auto;
 		   margin-left: auto;
-		   background-color: #FEF6C2;
+		   background-color: #231814;
 		   min-width: 900px;
 		   max-width: 1280px;
 		   box-shadow: 3px 3px 3px #666666;
 }
 .details { padding-left: 20%;
            padding-right: 20%;
+            overflow: auto;
 }
 img { padding-left: 10px;
      padding-right: 10px;
@@ -71,16 +77,19 @@ main h2, main h3, main h4, main p, main div, main ul, main dl
 #heroroad {
     background-image: url(heroroad.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 250px;
     }
 #heromugs {
     background-image: url(heromugs.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 250px;
     }
 #heroguitar {
     background-image: url(heroguitar.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 250px;
     }
 .floatleft {
